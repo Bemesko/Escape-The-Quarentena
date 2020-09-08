@@ -1,27 +1,63 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    private Queue<string> Sentences;
+    public static DialogueManager Instance { get; private set; }
 
-    void Start()
+    private Queue<string> _sentences;
+    [SerializeField]
+    private TextMeshProUGUI _nameText;
+    [SerializeField]
+    private TextMeshProUGUI _dialogueText;
+    [SerializeField]
+    private Animator _animator;
+
+    private void Awake()
     {
-        Sentences = new Queue<string>();
+        _sentences = new Queue<string>();
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log(dialogue.name);
+        _animator.SetBool("IsOpen", true);
+        _nameText.SetText(dialogue.name);
 
-        Sentences.Clear();
+        _sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
-            Sentences.Enqueue(sentence);
+            _sentences.Enqueue(sentence);
         }
 
+        DisplayNextSentence();
+    }
 
+    public void DisplayNextSentence()
+    {
+        if (_sentences.Count == 0)
+        {
+            EndDialogue();
+            return;
+        }
+
+        string sentence = _sentences.Dequeue();
+        _dialogueText.SetText(sentence);
+    }
+
+    void EndDialogue()
+    {
+        _animator.SetBool("IsOpen", false);
     }
 }

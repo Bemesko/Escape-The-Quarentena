@@ -7,6 +7,12 @@ public class DraggableBox : MonoBehaviour, IClickInteract
     private float _startPositionX;
     private float _startPositionY;
     private bool _isBeingHeld = false;
+    private DialogueTrigger _dialogueTrigger;
+
+    private void Awake()
+    {
+        _dialogueTrigger = GetComponent<DialogueTrigger>();
+    }
 
     private void Update()
     {
@@ -38,6 +44,6 @@ public class DraggableBox : MonoBehaviour, IClickInteract
 
     public void OnClick()
     {
-        Debug.Log("bolinha arrastável");
+        _dialogueTrigger.TriggerDialogue();
     }
 }
