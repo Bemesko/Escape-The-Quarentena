@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
+    public Node CurrentNode;
     public static RoomManager Instance { get; private set; }
     void Awake()
     {
@@ -18,8 +19,4 @@ public class RoomManager : MonoBehaviour
         }
     }
 
-    void ChangeRoomOrientation()
-    {
-
-    }
 }
