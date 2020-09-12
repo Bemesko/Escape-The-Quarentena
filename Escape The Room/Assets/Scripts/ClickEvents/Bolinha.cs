@@ -5,6 +5,8 @@ using UnityEngine;
 public class Bolinha : MonoBehaviour, IClickInteract
 {
     private DialogueTrigger _dialogueTrigger;
+    [SerializeField]
+    private GameObject _interacterItem;
 
     private void Awake()
     {
@@ -12,6 +14,11 @@ public class Bolinha : MonoBehaviour, IClickInteract
     }
     public void OnClick()
     {
-        _dialogueTrigger.TriggerDialogue();
+        Debug.Log(InventoryManager.Instance.SelectedItem);
+        Debug.Log(_interacterItem);
+        if (InventoryManager.Instance.SelectedItem != null && InventoryManager.Instance.SelectedItem.ItemID == _interacterItem.GetComponent<SelectableItem>().ItemID)
+        {
+            _dialogueTrigger.TriggerDialogue();
+        }
     }
 }

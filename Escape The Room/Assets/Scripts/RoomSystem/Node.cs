@@ -7,7 +7,9 @@ public abstract class Node : MonoBehaviour, IClickInteract
     [SerializeField]
     private List<Node> _reachableNodes = new List<Node>();
     [SerializeField]
-    private GameObject _imagemMostrada;
+    public Location RightLocation;
+    [SerializeField]
+    public Location LeftLocation;
     private Collider2D _collider2D;
 
     void Start()
@@ -15,7 +17,7 @@ public abstract class Node : MonoBehaviour, IClickInteract
         _collider2D = GetComponent<Collider2D>();
     }
 
-    public void OnClick()
+    public virtual void OnClick()
     {
         Arrive();
     }
@@ -29,8 +31,7 @@ public abstract class Node : MonoBehaviour, IClickInteract
 
         RoomManager.Instance.CurrentNode = this;
 
-        //mostrar a imagem correspondente do nó
-        _imagemMostrada.SetActive(true);
+        SetAllChildrenActive(true);
 
 
         if (_collider2D != null)
@@ -43,8 +44,16 @@ public abstract class Node : MonoBehaviour, IClickInteract
 
     void Leave()
     {
-        _imagemMostrada.SetActive(false);
+        SetAllChildrenActive(false);
         SetReachableColliders(false);
+    }
+
+    private void SetAllChildrenActive(bool activeState)
+    {
+        for (int i = 0; i < gameObject.transform.childCount; i++)
+        {
+            gameObject.transform.GetChild(i).gameObject.SetActive(activeState);
+        }
     }
 
     private void SetReachableColliders(bool isEnabled)
@@ -56,5 +65,10 @@ public abstract class Node : MonoBehaviour, IClickInteract
                 node.GetComponent<Collider2D>().enabled = isEnabled;
             }
         }
+    }
+
+    public void GoToLocation(Node location)
+    {
+        location.Arrive();
     }
 }

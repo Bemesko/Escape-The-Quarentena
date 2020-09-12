@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoomManager : MonoBehaviour
+public class InventoryManager : MonoBehaviour
 {
-    public Node CurrentNode;
-    public static RoomManager Instance { get; private set; }
+    public static InventoryManager Instance { get; private set; }
+    public bool[] IsFull;
+    public GameObject[] Slots;
+    public SelectableItem SelectedItem;
+
     void Awake()
     {
-        if (!Instance)
+        if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
