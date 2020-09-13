@@ -6,7 +6,6 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
-
     private Queue<string> _sentences;
     [SerializeField]
     private TextMeshProUGUI _nameText;
