@@ -14,7 +14,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        _collider2D.enabled = false;
         DialogueManager.Instance.StartDialogue(Dialogue);
     }
 }
