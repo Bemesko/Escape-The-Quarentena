@@ -13,6 +13,8 @@ public class DialogueManager : MonoBehaviour
     private TextMeshProUGUI _dialogueText;
     [SerializeField]
     private Animator _animator;
+    [SerializeField]
+    public DialogueTrigger _startDialogue;
 
     private void Awake()
     {
@@ -21,6 +23,7 @@ public class DialogueManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            _startDialogue.TriggerDialogue();
         }
         else
         {
