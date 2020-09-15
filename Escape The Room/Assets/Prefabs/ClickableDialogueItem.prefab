@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogue:
-    name: Objeto
+    name: Armando
     sentences:
     - Texto de Objeto
 --- !u!114 &7715857806875995232
