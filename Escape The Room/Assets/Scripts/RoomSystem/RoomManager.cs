@@ -12,6 +12,7 @@ public class RoomManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            CurrentNode.Arrive();
         }
         else
         {
