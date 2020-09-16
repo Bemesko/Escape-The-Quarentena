@@ -1083,7 +1083,7 @@ PrefabInstance:
     - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
         type: 3}
       propertyPath: Dialogue.sentences.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
         type: 3}
@@ -1093,7 +1093,23 @@ PrefabInstance:
     - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
         type: 3}
       propertyPath: Dialogue.sentences.Array.data[0]
-      value: adfasf
+      value: "Esse computador \xE9 uma das coisas mais caras que eu j\xE1 comprei,
+        com exce\xE7\xE3o desse apartamento, se bem que nem disso eu tenho tanta
+        certeza."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[1]
+      value: "J\xE1 faz dois anos, mas mesmo assim as configura\xE7\xF5es dele conseguiram
+        extremamente atuais. Talvez porque n\xE3o tenha tido tanto desenvolvimento
+        na \xE1rea de hardware durante a pandemia, quem sabe."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[2]
+      value: "Enfim, me lembro que atualmente ele disp\xF5e de 1 terabyte de RAM,
+        com um processador de 70GHz e um espa\xE7o de armazenamento maior que o DNA
+        inteiro de 70 seres humanos. Perfeito para ver v\xEDdeos na internet."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd06a20a31f3bf489a8acbca7aeafd0, type: 3}
@@ -1594,6 +1610,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightSwitch
       objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[0]
+      value: "N\xE3o creio que desligar a luz vai me ajudar de alguma forma em achar
+        minha chave."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd06a20a31f3bf489a8acbca7aeafd0, type: 3}
 --- !u!1001 &946789796
@@ -1703,6 +1725,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrontDoorMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[0]
+      value: "Por conven\xE7\xE3o as pessoas costumavam colocar seus carpetes do
+        lado de fora de casa. Hoje em dia este carpete mora junto comigo e o Reginaldo."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd06a20a31f3bf489a8acbca7aeafd0, type: 3}
@@ -2517,6 +2545,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coat
       objectReference: {fileID: 0}
+    - target: {fileID: 2801072887841103251, guid: deb6959df98ce6b4f9b7d4a55c30bf18,
+        type: 3}
+      propertyPath: InventoryItem
+      value: 
+      objectReference: {fileID: 7285609600221488834, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deb6959df98ce6b4f9b7d4a55c30bf18, type: 3}
 --- !u!4 &1315303768 stripped
@@ -2631,7 +2665,24 @@ PrefabInstance:
     - target: {fileID: 4040344802280554439, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
         type: 3}
       propertyPath: m_Name
-      value: Pia
+      value: Sink
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[1]
+      value: "N\xE3o sei explicar, por algum motivo algo dentro dela me lembra de
+        d\xEDzimas n\xE3o peri\xF3dicas, e talvez da raz\xE3o entre a circunfer\xEAncia
+        e o di\xE2metro de um c\xEDrculo... Nossa..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[0]
+      value: A palavra pia me agrada bastante por algum motivo. Pia... pia...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd06a20a31f3bf489a8acbca7aeafd0, type: 3}
@@ -2729,6 +2780,7 @@ RectTransform:
   - {fileID: 811945631}
   - {fileID: 1199718631}
   - {fileID: 1954907058}
+  - {fileID: 1732383553}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3441,6 +3493,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bed
       objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[0]
+      value: "Arrumar a cama \xE9 um compromisso que voc\xEA precisa levar para a
+        sua vida. \xC9 o s\xEDmbolo da verdadeira divis\xE3o de manter a est\xE9tica
+        de sua casa contra o conforto de viver sabendo que voc\xEA s\xF3 vai bagun\xE7ar
+        sua cama uma vez e isso s\xF3 se repetir\xE1 se voc\xEA arrum\xE1-la."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd06a20a31f3bf489a8acbca7aeafd0, type: 3}
 --- !u!1001 &1601887682
@@ -3550,6 +3610,28 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Curtain
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[1]
+      value: "Espera, isso acabou de passar pela minha cabe\xE7a agora."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[2]
+      value: "Acho que agora \xE9 uma boa hora para eu parar de usar minha cabe\xE7a
+        para pensar."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[0]
+      value: "Minha sanidade pode at\xE9 n\xE3o estar em uma de suas melhores \xE9pocas,
+        mas nunca passou pela minha cabe\xE7a levar uma chave comigo no chuveiro."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd06a20a31f3bf489a8acbca7aeafd0, type: 3}
@@ -3720,6 +3802,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toilet
       objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[0]
+      value: "N\xE3o."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd06a20a31f3bf489a8acbca7aeafd0, type: 3}
 --- !u!1001 &1700820096
@@ -3828,6 +3915,136 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4675826253761339255, guid: 31d0b6b8e7c908d41be622856af9cf4a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 31d0b6b8e7c908d41be622856af9cf4a, type: 3}
+--- !u!1001 &1732383552
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1369142258}
+    m_Modifications:
+    - target: {fileID: 7285609600221488834, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_Name
+      value: SilverKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488834, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d3e4960696c5914796f7e84ea769b2b, type: 3}
+--- !u!224 &1732383553 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7285609600221488835, guid: 0d3e4960696c5914796f7e84ea769b2b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1732383552}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1744007490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4138,7 +4355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1954907058
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4148,14 +4365,14 @@ RectTransform:
   m_GameObject: {fileID: 1954907057}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8749999, y: 1.8749999, z: 1.8749999}
+  m_LocalScale: {x: 2.6084998, y: 2.6084998, z: 2.6084998}
   m_Children: []
   m_Father: {fileID: 1369142258}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.0000009536743, y: 139}
+  m_AnchoredPosition: {x: 0.0000009536743, y: 102}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1954907059
@@ -4171,7 +4388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.7953454, b: 0.5990566, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4313,6 +4530,25 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WashingMachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[1]
+      value: "(nota do desenvolvedor: eu tamb\xE9m n\xE3o sei o que aconteceu na
+        ter\xE7a passada, use a sua imagina\xE7\xE3o.)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
+        type: 3}
+      propertyPath: Dialogue.sentences.Array.data[0]
+      value: "\xC9 poss\xEDvel que eu tenha deixado minha chave reserva dentro de
+        alguma cal\xE7a e posto para lavar, mas vamos torcer para eu achar ela em
+        algum outro lugar antes, n\xE3o quero brigar com essa m\xE1quina de novo
+        depois do que aconteceu na ter\xE7a passada..."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd06a20a31f3bf489a8acbca7aeafd0, type: 3}

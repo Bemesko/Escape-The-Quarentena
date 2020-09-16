@@ -9,8 +9,7 @@ public class SelectableItem : MonoBehaviour, IClickInteract
 
     public void OnClick()
     {
-        //SelectInventoryItem();
-        Debug.Log("Clicado");
+        SelectInventoryItem();
     }
 
     public void SelectInventoryItem()
@@ -26,6 +25,5 @@ public class SelectableItem : MonoBehaviour, IClickInteract
             IsSelected = true;
             InventoryManager.Instance.SelectedItem = this;
         }
-        Debug.Log(IsSelected);
     }
 }
