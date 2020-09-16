@@ -14,8 +14,6 @@ public class Bolinha : MonoBehaviour, IClickInteract
     }
     public void OnClick()
     {
-        Debug.Log(InventoryManager.Instance.SelectedItem);
-        Debug.Log(_interacterItem);
         if (InventoryManager.Instance.SelectedItem != null && InventoryManager.Instance.SelectedItem.ItemID == _interacterItem.GetComponent<SelectableItem>().ItemID)
         {
             _dialogueTrigger.TriggerDialogue();

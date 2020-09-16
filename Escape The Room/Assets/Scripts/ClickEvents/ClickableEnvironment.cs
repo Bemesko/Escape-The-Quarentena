@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickableBox : MonoBehaviour
+public class ClickableEnvironment : MonoBehaviour
 {
     void Update()
     {
@@ -16,6 +16,7 @@ public class ClickableBox : MonoBehaviour
             if (hit.collider != null && hit.collider.GetComponent<IClickInteract>() != null)
             {
                 hit.collider.GetComponent<IClickInteract>().OnClick();
+                Debug.Log(gameObject);
             }
         }
     }

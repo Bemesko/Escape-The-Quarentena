@@ -22,7 +22,7 @@ public abstract class Node : MonoBehaviour, IClickInteract
         Arrive();
     }
 
-    void Arrive()
+    public void Arrive()
     {
         if (RoomManager.Instance.CurrentNode != null)
         {

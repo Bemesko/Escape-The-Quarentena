@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 478be13bdc23dca4fa44e3e4760f45e2
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Stay Happy
+  fontNames:
+  - Stay Happy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f3d86501f86d9e749958e265627a74bd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoomManager : MonoBehaviour
+public class StoryManager : MonoBehaviour
 {
-    public Node CurrentNode;
-    public static RoomManager Instance { get; private set; }
-    void Awake()
+    public static StoryManager Instance { get; private set; }
+    public bool brokenKey = false;
+    public bool rememberedCoat = false;
+    private void Awake()
     {
-        if (!Instance)
+        if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            CurrentNode.Arrive();
         }
         else
         {
