@@ -5,8 +5,9 @@ using UnityEngine;
 public class StoryManager : MonoBehaviour
 {
     public static StoryManager Instance { get; private set; }
-    public bool rememberedCoat = false;
+    public bool forgotKey = false;
     public bool brokenKey = false;
+    public bool rememberedCoat = false;
     private void Awake()
     {
         if (Instance == null)
