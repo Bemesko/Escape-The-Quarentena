@@ -12,7 +12,7 @@ public class PickableItem : MonoBehaviour
         {
             if (InventoryManager.Instance.IsFull[i] == false)
             {
-                Instantiate(InventoryItem, InventoryManager.Instance.Slots[i].transform);
+                InventoryItem.SetActive(true);
                 Destroy(gameObject);
             }
         }

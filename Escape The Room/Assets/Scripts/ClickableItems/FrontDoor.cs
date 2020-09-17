@@ -16,14 +16,17 @@ public class FrontDoor : MonoBehaviour, IClickInteract
     {
         if (!StoryManager.Instance.brokenKey)
         {
-            //Exemplo de uso para um node interagir com o item selecionado
+            //Quebrar a chave
             if (InventoryManager.Instance.SelectedItem != null && InventoryManager.Instance.SelectedItem.ItemID == _firstKey.GetComponent<SelectableItem>().ItemID)
             {
                 _brokeKeyDialogue.TriggerDialogue();
+                _firstKey.SetActive(false);
+                InventoryManager.Instance.SelectedItem = null;
+                Debug.Log(InventoryManager.Instance.SelectedItem);
                 StoryManager.Instance.brokenKey = true;
             }
             else
-            {
+            {//Esquecer a chave
                 _forgetKeyDialogue.TriggerDialogue();
             }
         }
