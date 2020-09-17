@@ -457,7 +457,7 @@ MonoBehaviour:
   Dialogue:
     name: Armando
     sentences:
-    - "Eita, a chave quebrou! A humidade do banheiro deve ter feito seu servi\xE7o
+    - "Eita, a chave quebrou! A umidade do banheiro deve ter feito seu servi\xE7o
       com ela ao longo dos meses."
     - "Enfim, n\xE3o vamos entrar em p\xE2nico agora. Eu sei que eu tenho uma chave
       reserva. S\xF3 n\xE3o me lembro onde..."
@@ -521,8 +521,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: papapupi
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d6ff80a555887134ebb7f3d960b89546, type: 2}
-  m_sharedMaterial: {fileID: 1705339155083734423, guid: d6ff80a555887134ebb7f3d960b89546,
+  m_fontAsset: {fileID: 11400000, guid: df2e7b631772a69439a6ebdd8d7dc8f7, type: 2}
+  m_sharedMaterial: {fileID: 6767459152908694863, guid: df2e7b631772a69439a6ebdd8d7dc8f7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -547,8 +547,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2214,8 +2214,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 22, y: -24}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 22, y: -14}
+  m_SizeDelta: {x: 1065.2074, y: 59.991966}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1204169317
 MonoBehaviour:
@@ -2238,8 +2238,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: bababui
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 78d3af68abe7b3841a12ab89a09ccd9a, type: 2}
-  m_sharedMaterial: {fileID: 6663609134368404752, guid: 78d3af68abe7b3841a12ab89a09ccd9a,
+  m_fontAsset: {fileID: 11400000, guid: df2e7b631772a69439a6ebdd8d7dc8f7, type: 2}
+  m_sharedMaterial: {fileID: 6767459152908694863, guid: df2e7b631772a69439a6ebdd8d7dc8f7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2271,7 +2271,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 21
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
