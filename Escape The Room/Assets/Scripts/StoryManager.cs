@@ -6,6 +6,7 @@ public class StoryManager : MonoBehaviour
 {
     public static StoryManager Instance { get; private set; }
     public bool brokenKey = false;
+    public bool givenOboe = false;
     private void Awake()
     {
         if (Instance == null)

@@ -24,7 +24,7 @@ public class Reginaldo : MonoBehaviour, IClickInteract
             if (InventoryManager.Instance.SelectedItem != null && InventoryManager.Instance.SelectedItem.ItemID == _oboe.GetComponent<SelectableItem>().ItemID)
             {
                 _afterOboeDialogue.TriggerDialogue();
-                BreakOboe();
+                GiveOboe();
             }
             else
             {
@@ -37,8 +37,11 @@ public class Reginaldo : MonoBehaviour, IClickInteract
         }
     }
 
-    private void BreakOboe()
+    private void GiveOboe()
     {
-        throw new NotImplementedException();
+        _oboe.SetActive(false);
+        InventoryManager.Instance.SelectedItem = null;
+        StoryManager.Instance.givenOboe = true;
+        Debug.Log(StoryManager.Instance.givenOboe);
     }
 }

@@ -41,6 +41,5 @@ public class FrontDoor : MonoBehaviour, IClickInteract
         _firstKey.SetActive(false);
         InventoryManager.Instance.SelectedItem = null;
         StoryManager.Instance.brokenKey = true;
-        Debug.Log("");
     }
 }
