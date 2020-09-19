@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour
     private Animator _animator;
     [SerializeField]
     public DialogueTrigger _startDialogue;
+    [SerializeField]
+    private ClickableEnvironment _clickableEnvironment;
 
     private void Awake()
     {
@@ -35,6 +37,7 @@ public class DialogueManager : MonoBehaviour
     {
         _animator.SetBool("IsOpen", true);
         _nameText.SetText(dialogue.name);
+        _clickableEnvironment.CanClick = false;
 
         _sentences.Clear();
 
@@ -61,5 +64,6 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         _animator.SetBool("IsOpen", false);
+        _clickableEnvironment.CanClick = true;
     }
 }
