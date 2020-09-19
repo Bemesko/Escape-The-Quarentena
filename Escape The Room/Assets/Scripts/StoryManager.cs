@@ -15,7 +15,7 @@ public class StoryManager : MonoBehaviour
     [SerializeField]
     private Image _blackImage;
     [SerializeField]
-    private Canvas _creditsCanvas;
+    private ClickableEnvironment _clickableEnvironment;
     private void Awake()
     {
         if (Instance == null)
@@ -31,15 +31,16 @@ public class StoryManager : MonoBehaviour
 
     public void EndGame()
     {
-        _creditsCanvas.gameObject.SetActive(true);
         //Escurecer tela
         FadeToBlack();
         //Mostar diálogo que conta o que aconteceu depois
         _endDialogue.TriggerDialogue();
+        _clickableEnvironment.enabled = false;
     }
 
     private void FadeToBlack()
     {
+        _blackImage.gameObject.SetActive(true);
         Color fixedColor = _blackImage.color;
         fixedColor.a = 1;
         _blackImage.color = fixedColor;

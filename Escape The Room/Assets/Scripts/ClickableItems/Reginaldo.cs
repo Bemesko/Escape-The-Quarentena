@@ -42,6 +42,5 @@ public class Reginaldo : MonoBehaviour, IClickInteract
         _oboe.SetActive(false);
         InventoryManager.Instance.SelectedItem = null;
         StoryManager.Instance.GaveOboe = true;
-        Debug.Log(StoryManager.Instance.GaveOboe);
     }
 }
