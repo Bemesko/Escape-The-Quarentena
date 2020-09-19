@@ -19,7 +19,7 @@ public class Reginaldo : MonoBehaviour, IClickInteract
     }
     public void OnClick()
     {
-        if (StoryManager.Instance.brokenKey)
+        if (StoryManager.Instance.BrokeKey)
         {
             if (InventoryManager.Instance.SelectedItem != null && InventoryManager.Instance.SelectedItem.ItemID == _oboe.GetComponent<SelectableItem>().ItemID)
             {
@@ -41,7 +41,7 @@ public class Reginaldo : MonoBehaviour, IClickInteract
     {
         _oboe.SetActive(false);
         InventoryManager.Instance.SelectedItem = null;
-        StoryManager.Instance.givenOboe = true;
-        Debug.Log(StoryManager.Instance.givenOboe);
+        StoryManager.Instance.GaveOboe = true;
+        Debug.Log(StoryManager.Instance.GaveOboe);
     }
 }

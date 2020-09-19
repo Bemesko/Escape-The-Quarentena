@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class YellowMan : PickableItem
+public class Oboe : PickableItem
 {
     private DialogueTrigger _dialogueTrigger;
 
@@ -12,7 +12,7 @@ public class YellowMan : PickableItem
     }
     public override void PickItem()
     {
-        if (StoryManager.Instance.givenOboe)
+        if (StoryManager.Instance.BrokeKey)
         {
             base.PickItem();
         }
