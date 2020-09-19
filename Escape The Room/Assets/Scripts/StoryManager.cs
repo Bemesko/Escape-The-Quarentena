@@ -14,6 +14,8 @@ public class StoryManager : MonoBehaviour
     private DialogueTrigger _endDialogue;
     [SerializeField]
     private Image _blackImage;
+    [SerializeField]
+    private Canvas _creditsCanvas;
     private void Awake()
     {
         if (Instance == null)
@@ -29,6 +31,7 @@ public class StoryManager : MonoBehaviour
 
     public void EndGame()
     {
+        _creditsCanvas.gameObject.SetActive(true);
         //Escurecer tela
         FadeToBlack();
         //Mostar diálogo que conta o que aconteceu depois
