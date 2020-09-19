@@ -6,7 +6,7 @@ public class PickableItem : MonoBehaviour
 {
     public GameObject InventoryItem;
 
-    public void PickItem()
+    public virtual void PickItem()
     {
         for (int i = 0; i < InventoryManager.Instance.Slots.Length; i++)
         {
