@@ -20,10 +20,7 @@ public class FrontDoor : MonoBehaviour, IClickInteract
             if (InventoryManager.Instance.SelectedItem != null && InventoryManager.Instance.SelectedItem.ItemID == _firstKey.GetComponent<SelectableItem>().ItemID)
             {
                 _brokeKeyDialogue.TriggerDialogue();
-                _firstKey.SetActive(false);
-                InventoryManager.Instance.SelectedItem = null;
-                Debug.Log(InventoryManager.Instance.SelectedItem);
-                StoryManager.Instance.brokenKey = true;
+                BreakKey();
             }
             else
             {//Esquecer a chave
@@ -37,5 +34,13 @@ public class FrontDoor : MonoBehaviour, IClickInteract
                 //EndGame()
             }
         }
+    }
+
+    private void BreakKey()
+    {
+        _firstKey.SetActive(false);
+        InventoryManager.Instance.SelectedItem = null;
+        StoryManager.Instance.brokenKey = true;
+        Debug.Log("");
     }
 }
