@@ -27,14 +27,12 @@ public class SelectableItem : MonoBehaviour, IClickInteract
             IsSelected = false;
             InventoryManager.Instance.SelectedItem = null;
             _image.color = Color.white;
-            Debug.Log("Desselected");
         }
         else
         { // Se item selecionado não é ele
             IsSelected = true;
             InventoryManager.Instance.SelectedItem = this;
             _image.color = Color.red;
-            Debug.Log("Selected");
         }
     }
 }

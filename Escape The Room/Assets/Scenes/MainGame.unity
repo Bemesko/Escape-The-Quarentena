@@ -285,7 +285,8 @@ PrefabInstance:
     - target: {fileID: 4040344802280554442, guid: 1cd06a20a31f3bf489a8acbca7aeafd0,
         type: 3}
       propertyPath: Dialogue.sentences.Array.data[0]
-      value: chave
+      value: "Uma chave de fenda que eu deixei em cima da m\xE1quina de lavar por
+        algum motivo"
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7715857806875995232, guid: 1cd06a20a31f3bf489a8acbca7aeafd0, type: 3}
@@ -903,9 +904,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogue:
-    name: Armando
+    name: 
     sentences:
-    - Consegui a chave
+    - "Voc\xEA desparafusa seu boneco e encontra sua chave reserva dentro dele, assim
+      como Reginaldo tinha dito."
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3507,9 +3509,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogue:
-    name: Armando
+    name: 
     sentences:
-    - Fim do Jogo
+    - "Assim, Armando conseguiu finalmente sair de sua casa, ap\xF3s o susto com
+      sua chave."
+    - "Assim, Armando conseguiu finalmente sair de sua casa, ap\xF3s o susto com
+      sua chave."
+    - "O homem explicou que a not\xEDcia que ele recebeu foi dada por uma das fac\xE7\xF5es
+      que tinham se criado no mundo durante a quarentena, e que na verdade a epidemia
+      j\xE1 havia terminado havia 4 meses."
+    - "Armando descobriu que estava falando com um membro de uma fac\xE7\xE3o que
+      pilhava edif\xEDcios abandonados e que estava em guerra com outra fac\xE7\xE3o
+      da regi\xE3o. O homem inclusive tentou recrutar nosso amado protagonista."
+    - "Armando concluiu que n\xE3o estava afim de participar de nada disso, ent\xE3o
+      ele recusou educadamente a oferta daquele cavalheiro e voltou para sua casa
+      para jogar alguma coisa no seu computador."
+    - Le fin.
 --- !u!1001 &1482092136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3940,7 +3955,8 @@ MonoBehaviour:
       ela realmente est\xE1 escondida dentro do meu boneco do Yellow Man. Se cuida
       a\xED e bom treino."
     - ...
-    - "Aiai, esse Reginaldo \xE9 uma figura mesmo."
+    - "Aiai, esse Reginaldo \xE9 uma figura mesmo. Duvido que o meu boneco vai estar
+      aparafusado e vou ter que usar minha chave de fenda pra abr\xED-lo..."
 --- !u!1001 &1591683305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6117,7 +6133,7 @@ MonoBehaviour:
   Dialogue:
     name: Armando
     sentences:
-    - Texto de Objeto
+    - "Minha porta da frente. Preciso da minha chave para abr\xED-la."
 --- !u!4 &4040344801467110372
 Transform:
   m_ObjectHideFlags: 0
