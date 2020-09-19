@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -31,9 +32,14 @@ public class FrontDoor : MonoBehaviour, IClickInteract
         {
             if (InventoryManager.Instance.SelectedItem != null && InventoryManager.Instance.SelectedItem.ItemID == _trueKey.GetComponent<SelectableItem>().ItemID)
             {
-                //EndGame()
+                EndGame();
             }
         }
+    }
+
+    private void EndGame()
+    {
+        throw new NotImplementedException();
     }
 
     private void BreakKey()
