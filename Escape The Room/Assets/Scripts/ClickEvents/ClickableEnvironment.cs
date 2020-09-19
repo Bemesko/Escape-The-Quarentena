@@ -18,7 +18,6 @@ public class ClickableEnvironment : MonoBehaviour
             if (hit.collider != null && hit.collider.GetComponent<IClickInteract>() != null)
             {
                 hit.collider.GetComponent<IClickInteract>().OnClick();
-                Debug.Log(gameObject);
             }
         }
     }
