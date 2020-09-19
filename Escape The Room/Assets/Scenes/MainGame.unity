@@ -5862,19 +5862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2fe5dc0f484a4746b178e34c9ba36f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4378183795192984431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4378183795192984467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 977f1d7f826f72648a0cce52a6273431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InventoryItem: {fileID: 787659712}
 --- !u!4 &4378183795192984464
 Transform:
   m_ObjectHideFlags: 0
@@ -5927,7 +5914,8 @@ GameObject:
   - component: {fileID: 4378183795192984464}
   - component: {fileID: 4378183795192984465}
   - component: {fileID: 4378183795192984430}
-  - component: {fileID: 4378183795192984431}
+  - component: {fileID: 4378183795192984468}
+  - component: {fileID: 4378183795192984469}
   m_Layer: 0
   m_Name: YellowMan
   m_TagString: Untagged
@@ -5935,6 +5923,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4378183795192984468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4378183795192984467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ab12c058925644b2916a87a9e2f42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryItem: {fileID: 787659712}
+--- !u!114 &4378183795192984469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4378183795192984467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e1273f570669d40829c25d429b19df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogue:
+    name: Armando
+    sentences:
+    - "Meu action figure do Yellow Man, um dos super her\xF3is mais renomados da
+      fic\xE7\xE3o atual."
+    - "O que \xE9 um fato bastante impressionante, considerando que seu \xFAnico
+      poder \xE9 fazer com que seus inimigos mudem de cor."
 --- !u!212 &4378183796173131362
 SpriteRenderer:
   m_ObjectHideFlags: 0
