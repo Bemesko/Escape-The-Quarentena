@@ -6,13 +6,13 @@ public class PickableItem : MonoBehaviour
 {
     public GameObject InventoryItem;
 
-    public void PickItem()
+    public virtual void PickItem()
     {
         for (int i = 0; i < InventoryManager.Instance.Slots.Length; i++)
         {
             if (InventoryManager.Instance.IsFull[i] == false)
             {
-                Instantiate(InventoryItem, InventoryManager.Instance.Slots[i].transform);
+                InventoryItem.SetActive(true);
                 Destroy(gameObject);
             }
         }

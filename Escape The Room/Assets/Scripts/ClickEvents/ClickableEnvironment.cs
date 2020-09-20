@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ClickableEnvironment : MonoBehaviour
 {
+    public bool CanClick = true;
     void Update()
     {
+        if (!CanClick) return;
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -16,7 +18,6 @@ public class ClickableEnvironment : MonoBehaviour
             if (hit.collider != null && hit.collider.GetComponent<IClickInteract>() != null)
             {
                 hit.collider.GetComponent<IClickInteract>().OnClick();
-                Debug.Log(gameObject);
             }
         }
     }

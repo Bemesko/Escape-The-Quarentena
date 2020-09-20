@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,16 +15,16 @@ public class FrontDoor : MonoBehaviour, IClickInteract
     private GameObject _trueKey;
     public void OnClick()
     {
-        if (!StoryManager.Instance.brokenKey)
+        if (!StoryManager.Instance.BrokeKey)
         {
-            //Exemplo de uso para um node interagir com o item selecionado
+            //Quebrar a chave
             if (InventoryManager.Instance.SelectedItem != null && InventoryManager.Instance.SelectedItem.ItemID == _firstKey.GetComponent<SelectableItem>().ItemID)
             {
                 _brokeKeyDialogue.TriggerDialogue();
-                StoryManager.Instance.brokenKey = true;
+                BreakKey();
             }
             else
-            {
+            {//Esquecer a chave
                 _forgetKeyDialogue.TriggerDialogue();
             }
         }
@@ -31,8 +32,15 @@ public class FrontDoor : MonoBehaviour, IClickInteract
         {
             if (InventoryManager.Instance.SelectedItem != null && InventoryManager.Instance.SelectedItem.ItemID == _trueKey.GetComponent<SelectableItem>().ItemID)
             {
-                //EndGame()
+                StoryManager.Instance.EndGame();
             }
         }
+    }
+
+    private void BreakKey()
+    {
+        _firstKey.SetActive(false);
+        InventoryManager.Instance.SelectedItem = null;
+        StoryManager.Instance.BrokeKey = true;
     }
 }
