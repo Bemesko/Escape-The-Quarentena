@@ -13,4 +13,4 @@ Esse é um jogo point-and-click num estilo Room Escape, no qual você precisa en
 
 ## O Propósito
 Esse jogo foi feito durante os dias 08/09/2020 e ~~15/09/2020~~ 19/09/2020. Este é o terceiro jogo na minha maratona pessoal para treinar desenvolvimento de jogos, e faz parte da etape de criar um jogo em uma semana e ver no que dá.
-Eu também aproveitei um trabalho da minha matéria de Programação para jogos e fiz um documento de design antes de começar a desenvolver esse jogo, que também vou deixar disponível aqui no github.
+Eu também aproveitei um trabalho da minha matéria de Programação para jogos e fiz um documento de design antes de começar a desenvolver esse jogo, que também vou deixar disponível aqui: https://www.notion.so/Projeto-4-Documento-de-Design-4b25fd33c9d74352966bd59af7f0f141
